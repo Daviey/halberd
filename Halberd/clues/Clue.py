@@ -87,8 +87,8 @@ class Clue:
         elif isinstance(headers, types.ListType):
             self.headers = headers
         else:
-            raise TypeError, 'Unable to parse headers of type %s' \
-                             % type(headers).__name__
+            raise TypeError('Unable to parse headers of type %s' \
+                             % type(headers).__name__)
 
         # We examine each MIME field and try to find an appropriate handler. If
         # there is none we simply digest the info it provides.
